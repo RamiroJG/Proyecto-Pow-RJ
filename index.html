@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pow - Carrito</title>
+</head>
+<body>
+
+
+<!-- seccion header inicio -->
+
+
+    <header class="header">
+        <div class="header__top">
+            <p class="header__info">12 Cuotas sin interes + Envio gratis</p>
+        </div>
+        
+        <div class="header__barra">           
+            <div class="header__logo">
+                <h1>Pow.</h1>
+            </div>
+
+        
+            <nav class="navegacion">
+                <a href="#">Sale</a>
+                <a href="#" class="active">Coleccion</a>
+                <a href="#">Gift Cards</a>
+                
+                <a href="#"><img src="img/search.png" alt=""></a>
+                <a href="#"><img src="img/user.png" alt=""></a>
+                <a href="#" id="bolsa"><img src="img/shopping-bag.png" alt=""></a>
+            </nav>
+        </div>
+        
+    </header>
+
+
+<!-- seccion header final -->
+
+<!-- seccion compra inicio -->
+
+    <div class="container">
+            <div class="sidebar">
+                <div class="envios">
+                    <h3>Carrito</h3>
+
+                    <div class="envio">
+                        <div class="caja">
+                            <img src="img/delivery-box.png" alt="delivery-box">
+                            <p>Envios <span>Envios a todo el pais</span></p>
+                        </div>
+
+                        <div class="flecha">
+                            <img src="img/exchange.png" alt="delivery-box">
+                            <p>Cambios y Devoluciones <span>Es gratis y muy sencillo</span></p>
+                        </div>
+
+                        <div class="tarjeta">
+                            <img src="img/credit-card.png" alt="delivery-box">
+                            <p>Medios de pago <span>100% seguros</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resumen">
+                    <h3>Resumen</h3>
+
+                    <div class="resumen__contenedor">
+                        <p>Resumen</p>
+
+                        <div class="resumen__subtotal">
+                            <p>Subtotal</p>
+                            <p id="subTotal">$8514</p>
+                        </div>
+                        <div class="resumen__envio">
+                            <p>Envio</p>
+                            <p>Gratis</p>
+                        </div>
+                        <div class="resumen__total">
+                            <p>Total</p>
+                            <p id="subTotal2">$8514</p>
+                        </div>
+                    </div>
+
+                    <div class="gratis text-center">
+                        <p>Tu envio es gratis!</p>
+                    </div>
+                    
+                    <div class="compra">
+                        <a href="#">Completar compra</a>
+                    </div>
+                    <div class="seguir">
+                        <a href="#">Seguir comprando</a>
+                    </div>
+                </div>
+                <div class="envio2">
+                    <div class="caja">
+                        <img src="img/delivery-box.png" alt="delivery-box">
+                        <p>Envios <span>Envios a todo el pais</span></p>
+                    </div>
+
+                    <div class="flecha">
+                        <img src="img/exchange.png" alt="delivery-box">
+                        <p>Cambios y Devoluciones <span>Es gratis y muy sencillo</span></p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="img/credit-card.png" alt="delivery-box">
+                        <p>Medios de pago <span>100% seguros</span></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="sidebar">
+                <div class="articulos">
+                    <div class="articulos__descripcion">
+                        <ul>
+                            <li>ART.</li>
+                            <li>Talle</li>
+                            <li>Cant</li>
+                            <li>Precio</li>
+                            <li>Borrar</li>
+                        </ul>
+                    </div>
+
+                    <div class="articulos__info">
+                        <div class="articulos__modelo">
+                            <img src="img/modelo.jpg" alt="foto modelo">
+                        </div>
+                        <div class="articulos__texto">
+                            <p>Saco Cove Long <span>Color: Rojo</span></p>
+                        </div>
+                        <div class="articulos__talla">
+                            <p>44</p>
+                        </div>
+                        <div class="articulos__cantidad">
+                            <button class="boton disminuir">-</button>
+                            <span id="valor">1</span>
+                            <button class="boton aumentar">+</button>
+                        </div>
+                        <div class="articulos__precio">
+                            <p><strike>$9.895</strike> <span>$7.421</span></p>
+                        </div>
+                        <div class="articulos__borrar">
+                            <p>X</p>
+                        </div>
+                    </div>
+
+                    <div class="articulos__info">
+                        <div class="articulos__modelo">
+                            <img src="img/modelo.jpg" alt="foto modelo">
+                        </div>
+                        <div class="articulos__texto">
+                            <p>Saco Cove Long <span>Color: Rojo</span></p>
+                        </div>
+                        <div class="articulos__talla">
+                            <p>44</p>
+                        </div>
+
+                        <div class="articulos__cantidad">
+                            <button class="boton2 disminuir_otro">-</button>
+                            <span id="valor-otro">2</span>
+                            <button class="boton2 aumentar_otro">+</button>
+                        </div>
+
+                        <div class="articulos__precio">
+                            <p>$7.421</p>
+                        </div>
+                        <div class="articulos__borrar">
+                            <p>X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+<!-- seccion compra final -->
+
+
+<!-- seccion footer inicio -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__grid">
+            <div class="footer__logo-r">
+                <h1>Pow.</h1>
+            </div>
+
+            <nav class="navegacion__footer">
+                <img src="img/instagram.png" alt="">
+                <img src="img/facebook-app-symbol.png" alt="">
+            </nav>
+
+            <nav class="navegacion">
+                <a href="#">Faqs</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Locales</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <nav class="navegacion__footer-r">
+                <img src="img/instagram.png" alt="">
+                <img src="img/facebook-app-symbol.png" alt="">
+            </nav>
+
+            <div class="footer__logo">
+                <h1>Pow.</h1>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- seccion footer inicio -->
+
+
+
+<!-- Archivos JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>

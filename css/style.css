@@ -1,0 +1,370 @@
+html{
+    box-sizing: border-box
+}
+
+/** SECCION HEADER INICIO **/
+
+.header__top{
+    background-color: #000;
+}
+.header__info{
+    color: #fff;
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    padding: .5rem;
+}
+
+.header__barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.header__logo h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px){
+    .navegacion a{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+
+.active{
+    border-bottom: 1px solid #000;
+}
+
+
+/** SECCION HEADER FINAL **/
+
+
+/** SECCIO ENVIOS INICIO **/
+.envios{
+    padding: 2rem;
+}
+.envio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+@media (max-width: 768px){
+    .envio{
+        display: none;
+    }
+}
+.envio2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    padding: 2rem;
+    background-color: #f7f7f7;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+    .envio2{
+        display: none;
+    }
+}
+
+.caja, .flecha, .tarjeta{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.caja, .flecha, .tarjeta p{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.caja span{
+    display: block;
+    font-weight: 400;
+}
+.flecha span{
+    display: block;
+    font-weight: 400;
+}
+.tarjeta span{
+    display: block;
+    font-weight: 400;
+}
+
+.caja img{
+    width: 3rem;
+    height: 3rem;
+}
+.flecha img{
+    width: 3rem;
+    height: 3rem;
+}
+.tarjeta img{
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px){
+    .envio, .articulos__descripcion{
+        display: none;
+    }
+    .envios h3{
+        text-align: center;
+    }
+}
+/** SECCIO ENVIOS FINAL **/
+
+
+/** SECCIO ARTICULOS INICIO **/
+.sidebar{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+@media (max-width: 768px){
+    .sidebar{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.resumen{
+    padding: 2rem;
+}
+
+
+.resumen__contenedor{
+    background-color: #f7f7f7;
+    width: auto;
+    padding: 1rem;
+}
+.resumen__subtotal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumen__envio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resumen__total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.gratis{
+    margin-top: 2rem;
+    color: #3db56a;
+}
+
+/* .articulos{
+    margin-top: -17rem;
+} */
+@media (min-width: 768px){
+    .articulos{
+        margin-top: -17rem;
+    }
+}
+.articulos__info{
+    margin-bottom: 2rem;
+}
+.articulos__descripcion ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* border-bottom: 1px solid #666; */
+}
+li:nth-child(1){
+    grid-column: 1 / 3;
+    border-bottom: 1px solid #666;
+    width: auto;
+}
+li:nth-child(2){
+    border-bottom: 1px solid #666;
+    width: auto;
+    text-align: center;
+}
+li:nth-child(3){
+    border-bottom: 1px solid #666;
+    width: auto;
+    text-align: center;
+}
+li:nth-child(4){
+    border-bottom: 1px solid #666;
+    width: auto;
+    text-align: center;
+}
+li:nth-child(5){
+    border-bottom: 1px solid #666;
+    width: 70%;
+    text-align: center;
+}
+.articulos__descripcion li{
+    font-weight: 700;
+}
+
+.articulos__precio span{
+    color: red;
+    font-weight: 700;
+}
+
+.articulos__modelo img{
+    width: 7.5rem;
+    margin-left: 2rem;
+}
+
+.articulos__info{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.articulos__texto p{
+    font-weight: 700;
+}
+
+.articulos__texto span{
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin-top: .5rem;
+    margin-left: 3.1rem;
+    color: #666;
+}
+.articulos__cantidad{
+    display: flex;
+}
+.articulos__talla{
+    font-weight: 700;
+    margin-left: 2rem;
+}
+
+.compra a{
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.compra a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    padding: 1rem;
+}
+.seguir a{
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.seguir a{
+    display: block; 
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+
+/** SECCIO ARTICULOS FINAL **/
+
+
+/** SECCION FOOTER INICIO **/
+.footer{
+    background-color: #f7f7f7;
+    padding: 2rem;
+    margin: 0;
+}
+@media (max-width: 768px){
+    .footer__logo{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .footer__logo-r{
+        display: none;
+    }
+}
+
+
+.footer__grid{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+@media (min-width: 768px){
+    .footer__grid{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.navegacion__footer img{
+    margin-left: 2rem;
+}
+
+.navegacion__footer--links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    margin-right: 1rem;
+}
+@media (min-width: 768px){
+    .navegacion__footer--links{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .navegacion__footer img{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .navegacion__footer-r img{
+        display: none;
+    }
+}
+
+/** SECCION FOOTER FINAL **/
